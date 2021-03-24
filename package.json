@@ -1,0 +1,21 @@
+{
+  "name": "pull_request_target-test",
+  "version": "1.0.0",
+  "description": "`pull_request_target` Test -----------",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "echo \"this is from master\"",
+    "test": "node -e 'console.log(process.env.MY_SECRET)'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/outsideris/pull_request_target-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/outsideris/pull_request_target-test/issues"
+  },
+  "homepage": "https://github.com/outsideris/pull_request_target-test#readme"
+}
