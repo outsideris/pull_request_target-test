@@ -11,3 +11,5 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
       - uses: actions/setup-node@v2
       - run: npm test
+        env:
+          MY_SECRET: '${{secrets.MY_SECRET}}'
