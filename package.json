@@ -4,7 +4,7 @@
   "description": "`pull_request_target` Test -----------",
   "main": "index.js",
   "scripts": {
-    "pretest": "echo \"this is from main branch\"",
+    "pretest": "echo \"this is from m1 branch on same repo\"",
     "test": "node -e 'console.log(process.env.MY_SECRET)'"
   },
   "repository": {
