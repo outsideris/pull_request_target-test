@@ -1,4 +1,4 @@
-name: pull-request-target
+name: pull-request-target-pr
 on:
   pull_request_target
 
