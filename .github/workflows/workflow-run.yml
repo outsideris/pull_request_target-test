@@ -1,0 +1,17 @@
+name: pull request safe run
+
+on:
+  pull_request_target:
+    types: [labeled]
+
+jobs:
+  build:
+    name: Build and test
+    runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.labels.*.name, 'safe-to-run ')
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "Hello ${{ github.event.inputs.name }}!"
+        echo "- in ${{ github.event.inputs.home }}!"
