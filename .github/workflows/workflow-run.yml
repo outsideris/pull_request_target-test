@@ -13,8 +13,10 @@ jobs:
     - run: |
         echo "Hello ${{ github.event.inputs.name }}!"
         echo "- in ${{ github.event.inputs.home }}!"
+        return 123
     - name: removelabel
       uses: buildsville/add-remove-label@v1
+      if: ${{ always() }}
       with:
         token: ${{secrets.GITHUB_TOKEN}}
         label: safe-to-run
